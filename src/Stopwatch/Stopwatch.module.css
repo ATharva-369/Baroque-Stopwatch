@@ -1,0 +1,75 @@
+body{
+    background-image: url("../assets/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0 ;
+    font-family: 'Cormorant Garamond','serif';
+
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.clock{
+    color: #800020;
+    font-size: 6rem;
+    text-shadow : 3px 3px 6px #D4AF37,  
+    1px 1px 2px #D4AF37;
+    font-weight: 300;
+    text-align: center;
+}
+
+.clockContainer{
+    backdrop-filter: blur(1px);
+    padding: 10px 0;
+}
+
+/* MOBILE PHONE */
+@media only screen and (max-width: 600px) {
+    .clock{
+        font-size: 5rem;
+    }
+    .controls button{
+        max-width: fit-content;
+        margin: 0;
+        padding: 0;
+        font-size: 0.7rem;
+    }
+    .controls{
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+    }
+  }
+
+.controls button{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 8px 20px;
+    margin: 5px;
+    min-width: 125px;
+    border: none;
+    /* border-radius: 10px; */
+    background-color: #800020;
+    box-shadow: 3px 3px 6px #D4AF37,  
+    1px 1px 2px #D4AF37;
+    cursor: pointer;
+}
+
+
+
+.startButtonPressed{
+    transform: translateY(4px); /* Move button down slightly */
+    box-shadow: 1px 1px 2px #D4AF37;
+}
+.stopButtonPressed{
+    transform: translateY(4px); /* Move button down slightly */
+    box-shadow: 1px 1px 2px #D4AF37;
+}
+.resetButton:active{
+    transform: translateY(4px); /* Move button down slightly */
+    box-shadow: 1px 1px 2px #D4AF37;
+}
